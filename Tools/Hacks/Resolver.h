@@ -147,8 +147,10 @@ void CResolver::AntiAimResolver()
 				else
 					pResolverData[pEntity->GetIndex()].bfakeangle = true;
 			}*/
-			// ya ya bad coding below deal w/ it
-			// detect fakewalk using m_LegAnimType instead
+			
+			
+			// bad coding or anti paste? :thinking:
+			// detect fakewalk using m_LegAnimType instead just an fyi
 			for (int w = 0; w < 13; w++) 
 			{
 				AnimationLayer currentLayer = pEntity->GetAnimOverlay(w);
