@@ -147,8 +147,9 @@ void CResolver::AntiAimResolver()
 				else
 					pResolverData[pEntity->GetIndex()].bfakeangle = true;
 			}*/
-
-			for (int w = 0; w < 13; w++)
+			// ya ya bad coding below deal w/ it
+			// detect fakewalk using m_LegAnimType instead
+			for (int w = 0; w < 13; w++) 
 			{
 				AnimationLayer currentLayer = pEntity->GetAnimOverlay(w);
 				const int activity = pEntity->GetSequenceActivity(currentLayer.m_nSequence);
